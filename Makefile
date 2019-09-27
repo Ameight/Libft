@@ -6,7 +6,7 @@
 #    By: ejuana <ejuana@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/09 14:52:16 by ejuana            #+#    #+#              #
-#    Updated: 2019/09/26 19:22:10 by ejuana           ###   ########.fr        #
+#    Updated: 2019/09/27 03:11:40 by ejuana           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,7 +97,7 @@ $(NAME): $(OBJS)
 	@echo "Libft created!"
 
 %.o: %.c
-	@$(CC) $(CLAGS) -c $< -I. -o $@ 
+	@$(CC) $(CFLAGS) -c $< -I. -o $@ 
 
 clean: 
 	@rm -rf $(OBJS) 
